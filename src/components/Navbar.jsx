@@ -47,8 +47,8 @@ const Navbar = () => {
             className="menu md:menu-horizontal gap-2 p-0 text-base max-md:mt-2 font-bold font-title text-2xl space-y-4 md:space-y-0"
             style={{ backgroundColor: "#fbb714" }}
           >
-             <li><Link to="/">Home</Link></li>
-            <li><Link to="/menu">Menu</Link></li> 
+             <li><Link className="text-black" to="/">Home</Link></li>
+            <li><Link className="text-black" to="/menu">Menu</Link></li> 
             {/*
             <li className="text-black">
               <a href="/">Home</a>
