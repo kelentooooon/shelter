@@ -9,6 +9,9 @@ const Navbar = () => {
     setIsCollapsed(!isCollapsed);
   };
 
+  const closeMenu = () => {
+    setIsCollapsed(true);
+  };
   return (
     <nav className="navbar bg-base-100" style={{ backgroundColor: "#fbb714" }}>
       <div className="container mx-auto flex flex-col md:flex-row justify-between items-center">
@@ -47,14 +50,22 @@ const Navbar = () => {
             className="menu md:menu-horizontal gap-2 p-0 text-base max-md:mt-2 font-bold font-title text-2xl space-y-4 md:space-y-0"
             style={{ backgroundColor: "#fbb714" }}
           >
-            {/* <li><Link to="/">Home</Link></li>
-            <li><Link to="/menu">Menu</Link></li> */}
             <li className="text-black">
+              <Link to="/" onClick={closeMenu}>
+                Home
+              </Link>
+            </li>
+            <li className="text-black">
+              <Link to="/menu" onClick={closeMenu}>
+                Menu
+              </Link>
+            </li>
+            {/* <li className="text-black">
               <a href="/">Home</a>
             </li>
             <li className="text-black">
               <a href="/menu">Menu</a>
-            </li>
+            </li> */}
 
             <li className="text-black">
               <a href="tel:19111">19111</a>
