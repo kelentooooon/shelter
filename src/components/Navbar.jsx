@@ -50,6 +50,12 @@ const Navbar = () => {
             className="menu md:menu-horizontal gap-2 p-0 text-base max-md:mt-2 font-bold font-title text-2xl space-y-4 md:space-y-0"
             style={{ backgroundColor: "#fbb714" }}
           >
+<<<<<<< HEAD
+=======
+             <li><Link className="text-black" to="/">Home</Link></li>
+            <li><Link className="text-black" to="/menu">Menu</Link></li> 
+            {/*
+>>>>>>> 721b1671779adee19dd37df38a0d0362da104c0a
             <li className="text-black">
               <Link to="/" onClick={closeMenu}>
                 Home
@@ -65,8 +71,13 @@ const Navbar = () => {
             </li>
             <li className="text-black">
               <a href="/menu">Menu</a>
+<<<<<<< HEAD
             </li> */}
 
+=======
+            </li>
+*/}
+>>>>>>> 721b1671779adee19dd37df38a0d0362da104c0a
             <li className="text-black">
               <a href="tel:19111">19111</a>
             </li>
