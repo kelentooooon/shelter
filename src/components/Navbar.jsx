@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
-import logo from '../assets/img/logo.png';
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
+import logo from "../assets/img/logo.png";
 
 const Navbar = () => {
   const [isCollapsed, setIsCollapsed] = useState(true);
@@ -24,19 +24,41 @@ const Navbar = () => {
               aria-controls="logo-navbar-collapse"
               aria-label="Toggle navigation"
             >
-              <span className={`icon-[tabler--menu-2] ${!isCollapsed ? 'hidden' : 'block'} size-4`} />
-              <span className={`icon-[tabler--x] ${isCollapsed ? 'hidden' : 'block'} size-4`} />
+              <span
+                className={`icon-[tabler--menu-2] ${
+                  !isCollapsed ? "hidden" : "block"
+                } size-4`}
+              />
+              <span
+                className={`icon-[tabler--x] ${
+                  isCollapsed ? "hidden" : "block"
+                } size-4`}
+              />
             </button>
           </div>
         </div>
         <div
           id="logo-navbar-collapse"
-          className={`md:flex  ${isCollapsed ? 'hidden' : 'block'} grow basis-full overflow-hidden transition-[height] duration-300 max-md:w-full justify-end`}
+          className={`md:flex  ${
+            isCollapsed ? "hidden" : "block"
+          } grow basis-full overflow-hidden transition-[height] duration-300 max-md:w-full justify-end`}
         >
-          <ul className="menu md:menu-horizontal gap-2 p-0 text-base max-md:mt-2 font-bold font-title text-2xl space-y-4 md:space-y-0" style={{ backgroundColor: "#fbb714" }}>
-            <li><Link to="/">Home</Link></li>
-            <li><Link to="/menu">Menu</Link></li>
-            <li><a href='tel:19111'>19111</a></li>
+          <ul
+            className="menu md:menu-horizontal gap-2 p-0 text-base max-md:mt-2 font-bold font-title text-2xl space-y-4 md:space-y-0"
+            style={{ backgroundColor: "#fbb714" }}
+          >
+            {/* <li><Link to="/">Home</Link></li>
+            <li><Link to="/menu">Menu</Link></li> */}
+            <li className="text-black">
+              <a href="/">Home</a>
+            </li>
+            <li className="text-black">
+              <a href="/menu">Menu</a>
+            </li>
+
+            <li className="text-black">
+              <a href="tel:19111">19111</a>
+            </li>
           </ul>
         </div>
       </div>
