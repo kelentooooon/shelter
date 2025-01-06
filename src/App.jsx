@@ -6,17 +6,29 @@ import Footer from "./components/Footer";
 import Menu from "./components/Menu";
 import Home from "./components/Home";
 import Loading from "./components/Loading"; 
+import { loadMedia } from "./utils/loadMedia";
+
+const mediaUrls = [
+  // Add the URLs of all your media files here
+  "/path/to/image1.jpg",
+  "/path/to/image2.jpg",
+  "/path/to/video1.mp4",
+  // Add more media URLs as needed
+];
 
 function App() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    // Simulate a loading delay
-    const timer = setTimeout(() => {
-      setLoading(false);
-    }, 4000);
-
-    return () => clearTimeout(timer);
+    // Load all media files
+    loadMedia(mediaUrls)
+      .then(() => {
+        setLoading(false);
+      })
+      .catch((error) => {
+        console.error("Failed to load media:", error);
+        setLoading(false);
+      });
   }, []);
   return (
     <>
