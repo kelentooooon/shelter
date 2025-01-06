@@ -8,10 +8,10 @@ const Footer = () => {
         style={{ backgroundColor: "#fbb714" }}
       >
         <aside className="gap-0 place-items-center">
-        <h6 className="text-base-content text-3xl py-2 footer-title font-title text-black text-base">
+        <h6 className=" text-3xl py-2 footer-title font-title text-black">
                 Working Hours{" "}
               </h6>
-          <p className="text-base-content text-xl font-title text-black text-sm">
+          <p className="text-base-content  font-title text-black text-sm">
             Work from 9:00am to 3:00am <br />7 days a week
           </p>
         </aside>
@@ -23,18 +23,18 @@ const Footer = () => {
               aria-label="Google Map Link"
               style={{ textDecoration: "none" }}
             >
-              <h6 className="text-base-content text-3xl py-2 footer-title font-title text-black text-base">
+              <h6 className="text-base-content text-3xl py-2 footer-title font-title text-black">
                 Location{" "}
               </h6>
             </a>
 
-            <p className="text-xl font-title text-black text-base">
+            <p className="text-xl font-title text-black ">
               Mansoura, behind the university stadium
             </p>
 
         </aside>
         <aside className="gap-0 place-items-center">
-          <h6 className="text-base-content text-3xl py-2 footer-title font-title text-black text-base">
+          <h6 className="text-base-content text-3xl py-2 footer-title font-title text-black">
             Contact Us
           </h6>
           <div className="flex h-5 gap-4">
