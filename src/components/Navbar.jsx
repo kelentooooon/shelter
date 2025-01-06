@@ -60,6 +60,7 @@ const Navbar = () => {
                 Menu
               </Link>
             </li>
+
             {/* <li className="text-black">
               <a href="/">Home</a>
             </li>
@@ -68,7 +69,7 @@ const Navbar = () => {
             </li> */}
 
             <li className="text-black">
-              <a href="tel:19111">19111</a>
+              <a href="tel:+201033030440">+201033030440</a>
             </li>
           </ul>
         </div>

@@ -4,9 +4,13 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  margin: 0;
+  padding: 0;
+}
 
 body {
-  background-color: #ef9b0f;
+  background-color: #fbb714;
 }
 
 .swiper-button-next,
@@ -18,23 +22,53 @@ body {
   background-color: #ffd800;
 }
 
-.hero {
-  background-image: url("./assets/img/logo.jpg");
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
- background-color: #161616;
-  font-family: "Oswald", sans-serif;
-  font-weight: 200;
+.hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
-.img-slider {
-  height :800px;
-  width: 700px;
-  margin: 0 auto;
+@media (min-width: 768px) {
+  .hero img {
+    width: 100%;
+    height: calc(100vh - 100px);
+  }
+}
 
+footer {
+  border-top: solid 1px rgba(0, 0, 0, 0.288);
+  border-radius: 1%;
+}
+
+.loader {
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.swiper-img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+
+}
+
+@media (max-width: 768px) {
+  .swiper-img {
+    height: auto;
+  }
+}
+
+@media (max-width: 1278px) and (min-width: 768px) {
+  .swiper-img {
+    height: calc(100vh - 390px);;
+  }
 }
