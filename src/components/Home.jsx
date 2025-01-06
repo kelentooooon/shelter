@@ -177,7 +177,7 @@ const Home = () => {
           <h1 className="text-4xl font-bold mb-4">Order Now</h1>
           <p className="text-lg">
             We offer a wide range of cheese platters, each with a unique
-            selection of cheeses. Order online for pickup or delivery.
+            selection of cheeses. Order for delivery.
           </p>
           <button style={{backgroundColor : "black" , color :"#fbb714"}} className="btn btn-secondary mt-4 "><a href="tel:+201033030440">Order now</a></button>
         </div>
