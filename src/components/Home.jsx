@@ -1,4 +1,4 @@
-import React, {useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -20,15 +20,7 @@ import bigimg8 from "../assets/img/big-silder/big8.jpg";
 import bigimg9 from "../assets/img/big-silder/big9.jpg";
 import bigimg10 from "../assets/img/big-silder/big10.jpg";
 
-import smallimg1 from "../assets/img/mobile-silder/small1.jpg";
-import smallimg2 from "../assets/img/mobile-silder/small2.jpg";
-import smallimg3 from "../assets/img/mobile-silder/small3.jpg";
-import smallimg4 from "../assets/img/mobile-silder/small4.jpg";
-import smallimg5 from "../assets/img/mobile-silder/small5.jpg";
-import smallimg6 from "../assets/img/mobile-silder/small6.jpg";
-import smallimg7 from "../assets/img/mobile-silder/small7.jpg";
-import smallimg8 from "../assets/img/mobile-silder/small8.jpg";
-import smallimg9 from "../assets/img/mobile-silder/small9.jpg";
+import video from "../assets/video.mp4";
 
 import { EffectFade, Autoplay, Pagination } from "swiper/modules";
 
@@ -49,213 +41,147 @@ const Home = () => {
   return (
     <div>
       <div className="hero">
-        <img src={heroimg} alt="" />
+        {isSmallScreen ? (
+          <div className="overlay">
+            <video style={{
+              width: "100%",
+              height: "100vh",
+              objectFit: "cover",
+            }} src={video} autoPlay loop muted />
+            <div className="content">
+              <h1 className="text-4xl">Welcome</h1>
+              <p className="text-xl">To Shelter</p>
+            </div>
+          </div>
+        ) : (
+          <div>
+            <img src={heroimg} alt="" />
+          </div>
+        )}
       </div>
-      {isSmallScreen ? (
-        <Swiper
-          spaceBetween={30}
-          effect={"fade"}
-          loop={true}
-          autoplay={{
-            delay: 2500,
-            disableOnInteraction: false,
-          }}
-          pagination={{
-            clickable: true,
-          }}
-          modules={[EffectFade, Pagination, Autoplay]}
-          className="mySwiper py-2"
-        >
-          <SwiperSlide>
-            <img
-              style={{
-                width: "100%",
-                height: "100%",
-              }}
-              src={smallimg1}
-            />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img
-              style={{
-                width: "100%",
-                height: "100%",
-              }}
-              src={smallimg2}
-            />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img
-              style={{
-                width: "100%",
-                height: "100%",
-              }}
-              src={smallimg3}
-            />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img
-              style={{
-                width: "100%",
-                height: "100%",
-              }}
-              src={smallimg4}
-            />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img
-              style={{
-                width: "100%",
-                height: "100%",
-              }}
-              src={smallimg5}
-            />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img
-              style={{
-                width: "100%",
-                height: "100%",
-              }}
-              src={smallimg6}
-            />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img
-              style={{
-                width: "100%",
-                height: "100%",
-              }}
-              src={smallimg7}
-            />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img
-              style={{
-                width: "100%",
-                height: "100%",
-              }}
-              src={smallimg8}
-            />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img
-              style={{
-                width: "100%",
-                height: "100%",
-              }}
-              src={smallimg9}
-            />
-          </SwiperSlide>
-
-        </Swiper>
-      ) : (
-        <Swiper
-          spaceBetween={30}
-          effect={"fade"}
-          loop={true}
-          autoplay={{
-            delay: 2500,
-            disableOnInteraction: false,
-          }}
-          pagination={{
-            clickable: true,
-          }}
-          modules={[EffectFade, Pagination, Autoplay]}
-          className="mySwiper py-5"
-        >
-          <SwiperSlide>
-            <img
-              style={{
-                width: "100%",
-                height: "100%",
-              }}
-              src={bigimg1}
-            />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img
-              style={{
-                width: "100%",
-                height: "100%",
-              }}
-              src={bigimg2}
-            />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img
-              style={{
-                width: "100%",
-                height: "100%",
-              }}
-              src={bigimg3}
-            />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img
-              style={{
-                width: "100%",
-                height: "100%",
-              }}
-              src={bigimg4}
-            />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img
-              style={{
-                width: "100%",
-                height: "100%",
-              }}
-              src={bigimg5}
-            />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img
-              style={{
-                width: "100%",
-                height: "100%",
-              }}
-              src={bigimg6}
-            />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img
-              style={{
-                width: "100%",
-                height: "100%",
-              }}
-              src={bigimg7}
-            />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img
-              style={{
-                width: "100%",
-                height: "100%",
-              }}
-              src={bigimg8}
-            />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img
-              style={{
-                width: "100%",
-                height: "100%",
-              }}
-              src={bigimg9}
-            />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img
-              style={{
-                width: "100%",
-                height: "100%",
-              }}
-              src={bigimg10}
-            />
-          </SwiperSlide>
-        </Swiper>
-      )}
+      <Swiper
+        spaceBetween={30}
+        effect={"fade"}
+        loop={true}
+        autoplay={{
+          delay: 2500,
+          disableOnInteraction: false,
+        }}
+        modules={[EffectFade, Autoplay]}
+        className="mySwiper"
+      >
+        <SwiperSlide>
+          <img
+            style={{
+              width: "100%",
+              height: "100%",
+            }}
+            src={bigimg1}
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img
+            style={{
+              width: "100%",
+              height: "100%",
+            }}
+            src={bigimg2}
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img
+            style={{
+              width: "100%",
+              height: "100%",
+            }}
+            src={bigimg3}
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img
+            style={{
+              width: "100%",
+              height: "100%",
+            }}
+            src={bigimg4}
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img
+            style={{
+              width: "100%",
+              height: "100%",
+            }}
+            src={bigimg5}
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img
+            style={{
+              width: "100%",
+              height: "100%",
+            }}
+            src={bigimg6}
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img
+            style={{
+              width: "100%",
+              height: "100%",
+            }}
+            src={bigimg7}
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img
+            style={{
+              width: "100%",
+              height: "100%",
+            }}
+            src={bigimg8}
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img
+            style={{
+              width: "100%",
+              height: "100%",
+            }}
+            src={bigimg9}
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img
+            style={{
+              width: "100%",
+              height: "100%",
+            }}
+            src={bigimg10}
+          />
+        </SwiperSlide>
+      </Swiper>
+      <div className="story">
+        <div className="container mx-auto p-4 text-center text-black font-title">
+          <h1 className="text-4xl font-bold mb-4">The Story</h1>
+          <p className="text-lg">
+            In 2019, we opened Shelter House of Cheese, a haven for cheese
+            lovers. Our commitment has been to deliver an exceptional experience
+            for every guest, whether they're seasoned cheese connoisseurs or
+            simply curious about this delicious world.
+          </p>
+        </div>
+      </div>
+      <div className="order-now">
+        <div className="container mx-auto p-4 text-center text-black font-title">
+          <h1 className="text-4xl font-bold mb-4">Order Now</h1>
+          <p className="text-lg">
+            We offer a wide range of cheese platters, each with a unique
+            selection of cheeses. Order online for pickup or delivery.
+          </p>
+          <button style={{backgroundColor : "black" , color :"#fbb714"}} className="btn btn-secondary mt-4 "><a href="tel:+201033030440">Order now</a></button>
+        </div>
+      </div>
     </div>
   );
 };

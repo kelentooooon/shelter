@@ -4,33 +4,37 @@ const Footer = () => {
   return (
     <>
       <footer
-        className="footer bg-base-200/60 p-10"
+        className="footer bg-base-200/60 p-10 place-items-center text-center"
         style={{ backgroundColor: "#fbb714" }}
       >
-        <aside className="gap-0">
-          <p className="text-base-content font-title text-black text-sm">
+        <aside className="gap-0 place-items-center">
+        <h6 className="text-base-content text-3xl py-2 footer-title font-title text-black text-base">
+                Working Hours{" "}
+              </h6>
+          <p className="text-base-content text-xl font-title text-black text-sm">
             Work from 9:00am to 3:00am <br />7 days a week
           </p>
         </aside>
-        <aside className="gap-0">
-          <p className="text-base-content font-title text-black text-sm">
-            Mansoura, behind the university stadium <br />
-            <p className="text-xl font-title pt-1">
-              <a
-                href="https://www.google.com/maps/dir/31.080124,31.543913/31.0351265,31.3586766/@31.0463072,31.5910554,11z/"
-                target="_blank"
-                className="link text-black"
-                aria-label="Google Map Link"
-                style={{ textDecoration: "none" }}
-              >
+        <aside className="gap-0 place-items-center">
+            <a
+              href="https://www.google.com/maps/dir/31.080124,31.543913/31.0351265,31.3586766/@31.0463072,31.5910554,11z/"
+              target="_blank"
+              className="link text-black footer-title"
+              aria-label="Google Map Link"
+              style={{ textDecoration: "none" }}
+            >
+              <h6 className="text-base-content text-3xl py-2 footer-title font-title text-black text-base">
                 Location{" "}
-                <span className="icon-[tabler--brand-google-maps] size-5" />
-              </a>
+              </h6>
+            </a>
+
+            <p className="text-xl font-title text-black text-base">
+              Mansoura, behind the university stadium
             </p>
-          </p>
+
         </aside>
-        <aside className="gap-0">
-          <h6 className="text-base-content footer-title font-title text-black text-base">
+        <aside className="gap-0 place-items-center">
+          <h6 className="text-base-content text-3xl py-2 footer-title font-title text-black text-base">
             Contact Us
           </h6>
           <div className="flex h-5 gap-4">
@@ -69,6 +73,7 @@ const Footer = () => {
           </div>
         </aside>
       </footer>
+
       <aside className="flex justify-center w-full pb-5">
         <p className="font-title text-sm capitalize text-black font-black ">
           power by shorbagy agency.
