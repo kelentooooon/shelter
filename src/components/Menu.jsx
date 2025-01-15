@@ -16,16 +16,16 @@ import {
 } from "swiper/modules";
 
 // Import images
-import img1 from "../assets/img/menu/menu1.jpg";
-import img2 from "../assets/img/menu/menu2.jpg";
-import img3 from "../assets/img/menu/menu3.jpg";
-import img4 from "../assets/img/menu/menu4.jpg";
-import img5 from "../assets/img/menu/menu5.jpg";
-import img6 from "../assets/img/menu/menu6.jpg";
-import img7 from "../assets/img/menu/menu7.jpg";
-import img8 from "../assets/img/menu/menu8.jpg";
-import img9 from "../assets/img/menu/menu9.jpg";
-import img0 from "../assets/img/menu/menu10.jpg";
+import img1 from "../assets/img/menu/menu1.webp";
+import img2 from "../assets/img/menu/menu2.webp";
+import img3 from "../assets/img/menu/menu3.webp";
+import img4 from "../assets/img/menu/menu4.webp";
+import img5 from "../assets/img/menu/menu5.webp";
+import img6 from "../assets/img/menu/menu6.webp";
+import img7 from "../assets/img/menu/menu7.webp";
+import img8 from "../assets/img/menu/menu8.webp";
+import img9 from "../assets/img/menu/menu9.webp";
+import img0 from "../assets/img/menu/menu10.webp";
 
 const Menu = () => {
   const [isSmallScreen, setIsSmallScreen] = useState(false);
