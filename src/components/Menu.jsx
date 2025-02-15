@@ -54,34 +54,84 @@ const Menu = () => {
             }}
           >
             <SwiperSlide>
-              <img src={img1} alt="Slide 1" className="swiper-img" />
+              <img
+                src={img1}
+                loading="lazy"
+                alt="Slide 1"
+                className="swiper-img"
+              />
             </SwiperSlide>
             <SwiperSlide>
-              <img src={img2} alt="Slide 2" className="swiper-img" />
+              <img
+                src={img2}
+                loading="lazy"
+                alt="Slide 2"
+                className="swiper-img"
+              />
             </SwiperSlide>
             <SwiperSlide>
-              <img src={img3} alt="Slide 3" className="swiper-img" />
+              <img
+                src={img3}
+                loading="lazy"
+                alt="Slide 3"
+                className="swiper-img"
+              />
             </SwiperSlide>
             <SwiperSlide>
-              <img src={img4} alt="Slide 4" className="swiper-img" />
+              <img
+                src={img4}
+                loading="lazy"
+                alt="Slide 4"
+                className="swiper-img"
+              />
             </SwiperSlide>
             <SwiperSlide>
-              <img src={img5} alt="Slide 5" className="swiper-img" />
+              <img
+                src={img5}
+                loading="lazy"
+                alt="Slide 5"
+                className="swiper-img"
+              />
             </SwiperSlide>
             <SwiperSlide>
-              <img src={img6} alt="Slide 6" className="swiper-img" />
+              <img
+                src={img6}
+                loading="lazy"
+                alt="Slide 6"
+                className="swiper-img"
+              />
             </SwiperSlide>
             <SwiperSlide>
-              <img src={img7} alt="Slide 7" className="swiper-img" />
+              <img
+                src={img7}
+                loading="lazy"
+                alt="Slide 7"
+                className="swiper-img"
+              />
             </SwiperSlide>
             <SwiperSlide>
-              <img src={img8} alt="Slide 8" className="swiper-img" />
+              <img
+                src={img8}
+                loading="lazy"
+                alt="Slide 8"
+                className="swiper-img"
+              />
             </SwiperSlide>
             <SwiperSlide>
-              <img src={img9} alt="Slide 9" className="swiper-img" />
+              <img
+                src={img9}
+                loading="lazy"
+                alt="Slide 9"
+                className="swiper-img"
+              />
             </SwiperSlide>
             <SwiperSlide>
-              <img src={img0} alt="Slide 0" className="swiper-img" />
+              <img
+                src={img0}
+                loading="lazy"
+                alt="Slide 0"
+                className="swiper-img"
+              />
             </SwiperSlide>
           </Swiper>
         ) : (
@@ -113,38 +163,87 @@ const Menu = () => {
             }}
           >
             <SwiperSlide>
-              <img src={img1} alt="Slide 1" className="swiper-img" />
+              <img
+                src={img1}
+                loading="lazy"
+                alt="Slide 1"
+                className="swiper-img"
+              />
             </SwiperSlide>
             <SwiperSlide>
-              <img src={img2} alt="Slide 2" className="swiper-img" />
+              <img
+                src={img2}
+                loading="lazy"
+                alt="Slide 2"
+                className="swiper-img"
+              />
             </SwiperSlide>
             <SwiperSlide>
-              <img src={img3} alt="Slide 3" className="swiper-img" />
+              <img
+                src={img3}
+                loading="lazy"
+                alt="Slide 3"
+                className="swiper-img"
+              />
             </SwiperSlide>
             <SwiperSlide>
-              <img src={img4} alt="Slide 4" className="swiper-img" />
+              <img
+                src={img4}
+                loading="lazy"
+                alt="Slide 4"
+                className="swiper-img"
+              />
             </SwiperSlide>
             <SwiperSlide>
-              <img src={img5} alt="Slide 5" className="swiper-img" />
+              <img
+                src={img5}
+                loading="lazy"
+                alt="Slide 5"
+                className="swiper-img"
+              />
             </SwiperSlide>
             <SwiperSlide>
-              <img src={img6} alt="Slide 6" className="swiper-img" />
+              <img
+                src={img6}
+                loading="lazy"
+                alt="Slide 6"
+                className="swiper-img"
+              />
             </SwiperSlide>
             <SwiperSlide>
-              <img src={img7} alt="Slide 7" className="swiper-img" />
+              <img
+                src={img7}
+                loading="lazy"
+                alt="Slide 7"
+                className="swiper-img"
+              />
             </SwiperSlide>
             <SwiperSlide>
-              <img src={img8} alt="Slide 8" className="swiper-img" />
+              <img
+                src={img8}
+                loading="lazy"
+                alt="Slide 8"
+                className="swiper-img"
+              />
             </SwiperSlide>
             <SwiperSlide>
-              <img src={img9} alt="Slide 9" className="swiper-img" />
+              <img
+                src={img9}
+                loading="lazy"
+                alt="Slide 9"
+                className="swiper-img"
+              />
             </SwiperSlide>
             <SwiperSlide>
-              <img src={img0} alt="Slide 0" className="swiper-img" />
+              <img
+                src={img0}
+                loading="lazy"
+                alt="Slide 0"
+                className="swiper-img"
+              />
             </SwiperSlide>
           </Swiper>
         )}
-
       </div>
     </>
   );

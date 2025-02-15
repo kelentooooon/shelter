@@ -61,7 +61,7 @@ const Home = () => {
           </div>
         ) : (
           <div>
-            <img src={heroimg} alt="" />
+            <img src={heroimg} loading="lazy" alt="" />
           </div>
         )}
       </div>
@@ -83,6 +83,7 @@ const Home = () => {
               height: "100%",
             }}
             src={bigimg1}
+            loading="lazy"
           />
         </SwiperSlide>
         <SwiperSlide>
@@ -92,6 +93,7 @@ const Home = () => {
               height: "100%",
             }}
             src={bigimg2}
+            loading="lazy"
           />
         </SwiperSlide>
         <SwiperSlide>
@@ -101,6 +103,7 @@ const Home = () => {
               height: "100%",
             }}
             src={bigimg3}
+            loading="lazy"
           />
         </SwiperSlide>
         <SwiperSlide>
@@ -110,6 +113,7 @@ const Home = () => {
               height: "100%",
             }}
             src={bigimg4}
+            loading="lazy"
           />
         </SwiperSlide>
         <SwiperSlide>
@@ -119,6 +123,7 @@ const Home = () => {
               height: "100%",
             }}
             src={bigimg5}
+            loading="lazy"
           />
         </SwiperSlide>
         <SwiperSlide>
@@ -128,6 +133,7 @@ const Home = () => {
               height: "100%",
             }}
             src={bigimg6}
+            loading="lazy"
           />
         </SwiperSlide>
         <SwiperSlide>
@@ -137,6 +143,7 @@ const Home = () => {
               height: "100%",
             }}
             src={bigimg7}
+            loading="lazy"
           />
         </SwiperSlide>
         <SwiperSlide>
@@ -146,6 +153,7 @@ const Home = () => {
               height: "100%",
             }}
             src={bigimg8}
+            loading="lazy"
           />
         </SwiperSlide>
         <SwiperSlide>
@@ -155,6 +163,7 @@ const Home = () => {
               height: "100%",
             }}
             src={bigimg9}
+            loading="lazy"
           />
         </SwiperSlide>
         <SwiperSlide>
@@ -164,6 +173,7 @@ const Home = () => {
               height: "100%",
             }}
             src={bigimg10}
+            loading="lazy"
           />
         </SwiperSlide>
       </Swiper>
